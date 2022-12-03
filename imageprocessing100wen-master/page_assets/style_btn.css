@@ -1,0 +1,307 @@
+/*
+style button
+*/
+
+/*
+circle button
+*/
+
+.btn-circle {
+  background-color: #fff;
+  color: #000;
+  border: solid 2px #000;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  transition: .4s;
+  word-break: break-all;
+  margin: 20px;
+  padding-top: var(--pad-top);
+  font-size: 20px;
+  box-shadow: 2px 2px 4px gray;
+}
+
+.btn-circle:hover {
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+}
+
+/*
+rectangle button
+*/
+.btn-rec{
+  background-color: #fff;
+  color: #333;
+  border: solid 2px #000;
+  display: inline-block;
+  height: 40px;
+  border-radius: 10px;
+  padding-top: var(--pad-top);
+  font-size: 15px;
+  box-shadow: 2px 2px 4px gray;
+}
+
+.btn-rec:hover{
+  text-decoration: none;
+  color: #eee;
+  background-color: #333;
+}
+
+.text-change{
+  transition: .2s;
+  width: var(--width-before);
+}
+
+.text-change:hover {
+  width: var(--width-after);
+}
+
+.text-change::after {
+  content: var(--text-before);
+}
+
+.text-change:hover::after {
+  content: var(--text-after);
+}
+
+.content-block{
+  padding-top: 5%;
+}
+
+.title-ul{
+  padding-bottom: 1%;
+  border-bottom: 0.1em solid black;
+}
+
+.btn-div{
+  float: left;
+  text-align: center;
+  height: 200px;
+}
+
+
+/*
+link button
+*/
+
+.link-btn {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transition: .2s;
+  /*box-shadow: 3px 3px 3px gray;*/
+}
+
+.link-btn:hover {
+  /*box-shadow: 6px 6px 6px gray;*/
+  background-color: greenyellow;
+}
+
+/*
+Download button
+*/
+
+
+.dl-btn{
+  display: inline-block;
+  border-radius: 5%;
+  font-size: 10pt;
+  text-align: center;
+  cursor: pointer;
+  padding: 12px 12px;
+  background: white;
+  color: #333;
+  transition: .4s;
+  box-shadow: 1px 1px 1px #666666;
+  border: 1px solid #000066;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  width: 120px;
+}
+
+.dl-btn::after{
+  content: var(--content-before);
+  /*content: "Download!";*/
+}
+
+.dl-btn:hover::after{
+  content: var(--content-after);
+}
+
+.dl-btn:hover{
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+}
+
+
+
+.dl-img-div {
+	width: 300px;
+	height:	100px;
+	overflow:	hidden;
+  position:	relative;
+}
+
+.dl-img{
+  width: var(--width);
+  height: var(--height);
+}
+
+.dl-img-caption {
+	font-size: 20px;
+	text-align: center;
+	color:#fff;
+	padding-top: 30px;
+}
+.dl-img-mask {
+	width: 100px;
+	height:	100px;
+	position:	absolute;
+	top:			0;
+	margin-left: 100px;
+	opacity:		0;
+	background-color:	rgba(0,0,0,0.4);
+	-webkit-transition:	all 0.2s ease-out;
+	transition:		all 0.2s ease-out;
+}
+.dl-img-div:hover .dl-img-mask {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+/* below is from https://www.nxworld.net/tips/css-only-button-design-and-hover-effects.html */
+/*
+.dl-btn {
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 25px;
+  outline: none;
+}
+.dl-btn::before,
+.dl-btn::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: 'Download';
+}
+.dl-btn,
+.dl-btn::before,
+.dl-btn::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.dl-btn {
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  border: 2px solid #333;
+  color: #333;
+  overflow: hidden;
+}
+
+.dl-btn:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.dl-btn::after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(.5);
+  transform: scale(.5);
+  content: "";
+  text-align: center;
+  font-size: 30px;
+}
+.dl-btn:hover::after {
+  background: #333;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  content: "click!";
+  font-size: 20px;
+}
+*/
+
+
+.tutorial-link-btn::before{
+  right: 0;
+  top: 0;
+}
+.tutorial-link-btn::after{
+  left: 0;
+  bottom: 0;
+}
+.tutorial-link-btn span::before{
+  left: 0;
+  top: 0;
+}
+.tutorial-link-btn span::after{
+  right: 0;
+  bottom: 0;
+}
+
+
+.tutorial-link-btn{
+  display: inline-block;
+  position: relative;
+  background: none;
+  border: none;
+  color: #000;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 20px 30px;
+  background: rgba(0, 0, 0, 0.0);
+  width: 300px;
+  transition: .2s;
+  border: solid 2px black;
+}
+
+.tutorial-link-btn:hover {
+  background: rgba(0, 0, 0, 0.0);
+  border: solid 0px black;
+  text-decoration: none;
+}
+
+.tutorial-link-btn span{
+  display: block;
+  padding: 25px 30px;
+}
+.tutorial-link-btn::before, .tutorial-link-btn::after{
+  content:"";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: rgba(0, 50, 120, 0.6);
+  transition-delay: 0.2s;
+}
+
+.tutorial-link-btn span::before, .tutorial-link-btn span::after{
+  content:"";
+  width:2px;
+  height:0;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: rgba(0, 50, 120, 0.9);
+  transition-delay: 0.2s;
+}
+.tutorial-link-btn:hover::before, .tutorial-link-btn:hover::after{
+  width: 100%;
+}
+.tutorial-link-btn:hover span::before, .tutorial-link-btn:hover span::after{
+  height: 100%;
+  transition-delay: 0.s;
+}

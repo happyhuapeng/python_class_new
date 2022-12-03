@@ -1,0 +1,32 @@
+/*
+header menu navigator
+*/
+
+.site-header{
+  position: fixed;
+  background-color: black;
+  opacity: 0.7;
+  width: 100%;
+  height: auto ;
+  z-index:1000;
+}
+
+.header-menu-item {
+  float: left;
+  height : 60px;
+  width: 25%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.header-text {
+  flex: 1;
+  font-size: 15px;
+}
+
+.header-menu-item:hover {
+  cursor: pointer;
+  background: white;
+  transition: all .5s ease-out;
+}

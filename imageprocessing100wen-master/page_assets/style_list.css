@@ -1,0 +1,42 @@
+
+/*
+list checkmark
+*/
+
+.checklist{
+  list-style-type: none;
+}
+.checklist > li {
+  position: relative;
+}
+.checklist > li::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: .5em;
+  left: -1.5em;
+  width: 10px;
+  height: 5px;
+  border-left: 2px solid #25AF01;
+  border-bottom: 2px solid #25AF01;
+  transform: rotate(-45deg);
+}
+
+.nonhead-list > ul {
+  list-style-type: none;
+}
+.nonhead-list > li {
+  position: relative;
+}
+.nonheadlist > li::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: .5em;
+  left: -1.5em;
+  width: 10px;
+  height: 5px;
+  border-left: 2px solid #25AF01;
+  border-bottom: 2px solid #25AF01;
+  transform: rotate(-45deg);
+}

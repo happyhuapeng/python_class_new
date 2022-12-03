@@ -1,0 +1,21 @@
+/*
+Title config
+*/
+
+.home-content {
+  width: 100%;
+}
+
+.title{
+  margin: 100px 0 5% 0;
+  width: 100%;
+  font-size: 45px;
+  text-align: center;
+}
+
+.title-ul{
+  padding-bottom: 1%;
+  border-bottom: 0.1em solid black;
+  margin: 0 10% 1% 10%;
+  text-align: justify;
+}
